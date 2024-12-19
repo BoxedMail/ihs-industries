@@ -9,20 +9,21 @@
     position: sticky;
     top: 0;
     z-index: 999;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
   
 .navbar-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 80px;
-    max-width: 1500px;
+    max-width: 1600px;
 }
   
 .navbar-logo {
-    color: #2571a0;
+    color: #135985;
     justify-self: start;
-    margin-left: 20px;
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
@@ -41,7 +42,7 @@
     grid-gap: 10px;
     list-style: none;
     text-align: center;
-    width: 60vw;
+    width: 70vw;
     justify-content: end;
     margin-right: 2rem;
 }
@@ -51,7 +52,7 @@
 }
   
 .nav-links {
-    color: #2571a0;
+    color: #135985;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -60,7 +61,7 @@
 }
   
 .nav-links:hover {
-    border-bottom: 4px solid #2571a0;
+    border-bottom: 4px solid #5395be;
     transition: all 0.2s ease-out;
 }
   
@@ -77,7 +78,7 @@
 }
 
 .menu-icon .fa-times, .menu-icon .fa-bars {
-    color: #2571a0; 
+    color: #135985; 
 }
 
   
@@ -116,7 +117,7 @@
 
     .nav-links:hover {
         background-color: #fff;
-        color: #242424;
+        color: #1b4462;
         border-radius: 0;
     }
 
