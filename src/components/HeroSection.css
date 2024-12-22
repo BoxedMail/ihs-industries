@@ -9,6 +9,7 @@
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
     padding-left: 8%;
     object-fit: contain;
+    margin-top: 0px;
 }
   
 .hero-container > h1 span {
@@ -23,7 +24,7 @@
     }
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 560px) {
     .hero-container > h1 span {
         font-size: 60px;
     }
