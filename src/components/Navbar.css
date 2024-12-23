@@ -30,8 +30,9 @@
     display: flex;
     align-items: center;
     white-space: nowrap;
+    gap: 10px;
 }
-  
+
 .fa-typo3 {
     margin-left: 0.5rem;
     font-size: 1.8rem;
@@ -62,7 +63,7 @@
 }
   
 .nav-links:hover {
-    border-bottom: 4px solid #5395be;
+    border-bottom: 4px solid #25c4f0;
     transition: all 0.2s ease-out;
 }
   
@@ -123,10 +124,9 @@
     }
 
     .navbar-logo {
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform: translate(25%, 50%);
+        display: flex;
+        align-items: center;
+        margin-right: 800px; 
     }
 
     .menu-icon {

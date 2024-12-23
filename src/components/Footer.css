@@ -1,0 +1,117 @@
+.footer {
+    background-color: #135985;
+    color: #fff;
+    padding: 50px; /* Maintained increased padding for more height */
+    min-height: 200px; /* Ensures a minimum height for the footer */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px; /* Maintained increased padding for more content space */
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 20px 0; /* Maintained increased margin for better spacing */
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Increased gap for better spacing */
+    margin-bottom: 40px; /* Adjusted spacing */
+}
+
+.contact-item:last-child {
+    margin-bottom: 0; /* Removes the unwanted gap below the last item */
+}
+
+.contact-icon {
+    font-size: 1.5rem; /* Increased icon size */
+    color: #25c4f0;
+}
+
+.company-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Adjusted gap for better spacing */
+    margin-bottom: 70px;
+}
+
+.company-logo {
+    width: 50px; /* Increased logo size */
+    height: auto;
+}
+
+.company-name span {
+    font-size: 2rem; /* Increased text size */
+    font-weight: bold;
+    color: #fff;
+}
+
+.company-link {
+    text-decoration: none; /* Removes the default underline from the link */
+    color: inherit; /* Ensures the text color remains consistent */
+  }
+
+.footer-nav {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Ensures links are side by side */
+    gap: 20px; /* Increased spacing between links */
+    justify-content: center; /* Centers the links */
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem; /* Increased link text size */
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+.opening-hours {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 90px;
+    font-size: 1.2rem; /* Increased text size */
+    gap: 15px;
+}
+
+.footer-copyright {
+    text-align: right;
+    font-size: 1rem; /* Increased text size */
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-nav {
+        flex-direction: column; /* Stacks links vertically on small screens */
+        gap: 15px; /* Adjusted gap for vertical layout */
+    }
+
+    .opening-hours,
+    .footer-copyright {
+        justify-content: center;
+        text-align: center;
+    }
+}

@@ -15,6 +15,7 @@ function Navbar() {
         <nav className="navbar">
             <div className="navbar-container">
               <Link to="/" className='navbar-logo'>
+                <img src="logo192.png" alt="Company Logo" className="company-logo" />
                 IHS ENGINEERING
               </Link>
             <div className='menu-icon' onClick={handleClick}>
