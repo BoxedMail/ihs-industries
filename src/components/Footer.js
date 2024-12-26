@@ -20,7 +20,10 @@ function Footer() {
           </div>
           <div className="contact-item">
             <FontAwesomeIcon icon={faMapMarkerAlt} className="contact-icon" />
-            <span>1234 Industrial Ave, Suite 100, City, Country</span>
+            <span>
+                1234 Industrial Ave, Suite 100<br />
+                City, Country
+            </span>
           </div>
         </div>
 
@@ -32,7 +35,7 @@ function Footer() {
                 </div>
             </Link>
             <ul className="footer-nav">
-                <li><a href="/">About</a></li>
+                <li><a href="/about">About</a></li>
                 <li><a href="/services">Services</a></li>
                 <li><a href="/contact-us">Contact Us</a></li>
             </ul>

@@ -127,6 +127,7 @@
         display: flex;
         align-items: center;
         margin-right: 800px; 
+        font-size: 1.9rem;
     }
 
     .menu-icon {
@@ -163,5 +164,17 @@
         background: #fff;
         color: #242424;
         transition: 250ms;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .navbar-logo {
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .navbar-logo {
+        font-size: 1.4rem;
     }
 }
