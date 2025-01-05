@@ -8,9 +8,11 @@ Services:
 
 - Custom Precast Concrete Solutions
 
-Drafting
+- Embedded Steel Reinforcement Scannning
 
-- Industries:
+- Drafting
+
+Industries:
 
 - Construction
 
@@ -22,3 +24,13 @@ Drafting
 
 
 
+To do 23/12:
+
+- Add logo in navbar  ✔
+- Change navbar hover colour to match light blue used in footer ✔
+- Make the company name and logo in the footer direct to the home page. ✔
+- Fix the problem with the logo and company name in the navbar being clapped when shifting to < 960px. ✔
+- Design the footer for smaller screens ✔
+- Add go to services component in the home page which directs to services - utilise button component for nice look.
+- Add a section introducting the company on the home page (need hadi to write someshit up).
+- Test all components of the home page.

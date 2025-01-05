@@ -1,0 +1,47 @@
+.to-services {
+    position: relative;
+    background-image: url('../images/image3.JPG'); 
+    background-size: cover;
+    background-position: center;
+    height: 50vh; /* Adjust as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent white */
+    padding: 50px;
+    text-align: center;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 90%;
+}
+
+.title {
+    color: #135985;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.description {
+    color: #242424;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #135985;
+    border: 2px solid #135985;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #135985;
+    color: #fff;
+}

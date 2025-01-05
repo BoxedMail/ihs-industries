@@ -1,14 +1,17 @@
 import '../../App.css';
-import HeroSection from '../HeroSection';
 import React from 'react';
+import HeroSection from '../HeroSection';
 import OurIndustries from '../OurIndustries';
+import ToServices from '../ToServices';
 
 
 function Home () {
     return (
         <>
             <HeroSection />
+            <ToServices />
             <OurIndustries />
+
         </>
     );
 }
