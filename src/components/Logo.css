@@ -1,0 +1,131 @@
+.logo-container {
+    position: relative;
+    height: 250px; /* Adjust height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff; /* Fallback color */
+}
+
+.logo-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-image: url('../images/image7.JPG');  */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.05; 
+    z-index: 1; 
+}
+
+.logo-container::after {
+    content: "";
+    position: absolute;
+    top: 0; /* Start from the top */
+    left: 0;
+    width: 100%;
+    height: 25px; /* Combined height of both lines */
+    z-index: 2; /* Above the background image but below the content */
+    background: linear-gradient(to bottom, #333333 10px, #135985 10px 25px); 
+    /* Grey line (10px) and blue line (15px) */
+}
+
+.background-overlay {
+    position: relative;
+    z-index: 3; /* Above the background and lines */
+    display: flex;
+    align-items: center; /* Ensures vertical alignment */
+    gap: 15px; /* Adds spacing between the logo and name */
+    margin-top: 70px;
+}
+
+.logo-image {
+    width: 120px; 
+    height: auto;
+}
+
+.comp-name {
+    font-size: 6rem; 
+    font-weight: bold;
+    color: #135985; 
+    margin: 0;
+}
+
+
+@media screen and (max-width: 1050px) {
+    .logo-image {
+        width: 100px; 
+    }
+    
+    .comp-name {
+        font-size: 5rem; 
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .logo-image {
+        width: 90px; 
+    }
+
+    .comp-name {
+        font-size: 4.5rem; 
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .logo-image {
+        width: 80px; 
+    }
+
+    .comp-name {
+        font-size: 4rem; 
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .logo-image {
+        width: 70px; 
+    }
+
+
+    .comp-name {
+        font-size: 3.5rem; 
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .logo-image {
+        width: 60px; 
+    }
+
+
+    .comp-name {
+        font-size: 3rem; 
+    }
+}
+
+
+@media screen and (max-width: 530px) {
+    .logo-image {
+        width: 50px; 
+    }
+
+
+    .comp-name {
+        font-size: 2.5rem; 
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .logo-image {
+        width: 40px; 
+    }
+
+
+    .comp-name {
+        font-size: 2rem; 
+    }
+}

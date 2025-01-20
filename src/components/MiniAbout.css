@@ -1,0 +1,14 @@
+.mini-about-container {
+    background-color: #ffffff; /* White background */
+    padding: 20px 40px; /* Add padding for spacing */
+    margin: 20px auto; /* Center the component horizontally */
+    max-width: 1200px; /* Restrict the maximum width */
+    text-align: center; /* Center the text */
+}
+
+.about-text {
+    font-size: 1.2rem; /* Adjust font size */
+    line-height: 1.8; /* Improve readability */
+    color: #242424;; /* Dark grey for readability */
+    font-family: 'Arial', sans-serif; /* Clean font style */
+}

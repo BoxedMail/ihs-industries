@@ -1,0 +1,116 @@
+.contact-form-container {
+    background-color: #ffffff; /* White background for the entire section */
+    padding: 80px 2%;
+    display: flex;
+    flex-direction: column; /* Stack the sections vertically */
+    align-items: center; /* Center the form horizontally */
+    gap: 80px; /* Space between the sections */
+}
+
+.contact-info-container {
+    display: grid; /* Use grid for precise alignment */
+    grid-template-columns: 1fr 1fr; /* Two equal columns for location and contact info */
+    width: 1000px; /* Match the form width */
+    max-width: 90%; /* Match the form's responsive behavior */
+    padding: 0 40px; /* Align with form's internal padding */
+}
+
+.location {
+    text-align: left;
+}
+
+.contact-info {
+    text-align: right;
+}
+
+.location h3,
+.contact-info h3 {
+    font-size: 2rem; /* Bigger title size */
+    color: #135985; /* Blue title color */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.location p,
+.contact-info p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #000000; /* Black text color */
+}
+
+.form-box {
+    width: 1000px; /* Ensure the form matches the contact-info-container width */
+    max-width: 90%;
+    background-color: #ffffff;
+    padding: 0 40px; /* Align with the contact-info-container */
+}
+
+.contact-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #135985; /* Blue color for the title */
+    text-align: left; /* Align the title text to the left */
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between form fields */
+}
+
+.form-group {
+    display: flex;
+    flex-wrap: wrap; /* Wrap fields for smaller screens */
+    gap: 10px; /* Space between input fields */
+}
+
+.form-group input,
+.form-group textarea {
+    flex: 1;
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #135985; /* Outline color */
+    border-radius: 4px;
+    resize: none; /* Disable resizing for textareas */
+}
+
+textarea {
+    height: 150px; /* Larger textarea */
+}
+
+.submit-button {
+    background-color: #135985; /* Submit button color */
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    align-self: flex-start; /* Align the button to the left */
+}
+
+.submit-button:hover {
+    background-color: #0f4b6d; /* Darker blue on hover */
+}
+
+@media screen and (max-width: 768px) {
+    .contact-info-container {
+        grid-template-columns: 1fr; /* Stack location and contact info vertically */
+        gap: 50px;
+        padding: 0 10px;
+    }
+
+    .location {
+        text-align: center;
+    }
+    
+    .contact-info {
+        text-align: center;
+    }
+
+    .form-box {
+        padding: 0 10px; 
+    }
+}

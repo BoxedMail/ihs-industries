@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import logo from '../images/logo.jpg';
+import logo from '../images/ihs-logo.jpg';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
@@ -15,8 +15,8 @@ function Navbar() {
         <nav className="navbar">
             <div className="navbar-container">
               <Link to="/" className='navbar-logo'>
-                <img src="logo192.png" alt="Company Logo" className="company-logo" />
-                IHS ENGINEERING
+                <img src={logo} alt="Company Logo" className="company-logo" />
+                IHS ENGINEERING CO
               </Link>
             <div className='menu-icon' onClick={handleClick}>
               <i className={click ? 'fas fa-times' : 'fas fa-bars'} />

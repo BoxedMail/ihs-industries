@@ -3,6 +3,8 @@ import './Footer.css';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope, faMapMarkerAlt, faClock } from '@fortawesome/free-solid-svg-icons';
+import logo from '../images/white-bg.png';
+
 
 function Footer() {
   return (
@@ -12,17 +14,17 @@ function Footer() {
         <div className="footer-section">
           <div className="contact-item">
             <FontAwesomeIcon icon={faPhone} className="contact-icon" />
-            <span>+1 (555) 123-4567</span>
+            <span>+61 451 779 644</span>
           </div>
           <div className="contact-item">
             <FontAwesomeIcon icon={faEnvelope} className="contact-icon" />
-            <span>info@ihsindustries.com</span>
+            <span>info@ihsengineeringco.com.au</span>
           </div>
           <div className="contact-item">
             <FontAwesomeIcon icon={faMapMarkerAlt} className="contact-icon" />
             <span>
-                1234 Industrial Ave, Suite 100<br />
-                City, Country
+                {/* 1234 Industrial Ave, Suite 100<br /> */}
+                Melbourne, Australia
             </span>
           </div>
         </div>
@@ -30,8 +32,8 @@ function Footer() {
         <div className="footer-section">
             <Link to="/" className="company-link">
                 <div className="company-name">
-                    <img src="logo192.png" alt="Company Logo" className="company-logo" />
-                    <span>IHS ENGINEERING</span>
+                    <img src={logo} alt="Company Logo" className="company-logo" />
+                    <span>IHS ENGINEERING CO</span>
                 </div>
             </Link>
             <ul className="footer-nav">
@@ -44,10 +46,10 @@ function Footer() {
         <div className="footer-section">
           <div className="opening-hours">
             <FontAwesomeIcon icon={faClock} className="contact-icon" />
-            <span>Mon - Fri: 9:00 AM - 5:00 PM</span>
+            <span>Mon - Sun: 8:00 AM - 5:30 PM</span>
           </div>
           <div className="footer-copyright">
-            <span>&copy; {new Date().getFullYear()} IHS ENGINEERING </span>
+            <span>&copy; {new Date().getFullYear()} IHS ENGINEERING CO </span>
           </div>
         </div>
 
