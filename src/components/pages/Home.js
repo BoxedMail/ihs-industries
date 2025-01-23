@@ -13,6 +13,10 @@ function Home () {
 
             <Helmet>
                 <title>Home - IHS Engineering Co</title>
+                <meta
+                    name="description"
+                    content="Construction Engineering Specialists - Delivering world-class engineering solutions tailored to your needs."
+                />
             </Helmet>
             
             <HeroSection />
