@@ -23,8 +23,8 @@ function ContactForm() {
             {/* Form Section */}
             <div className="form-box">
                 <h2 className="contact-title">LET US HANDLE YOUR NEXT PROJECT</h2>
-                <form name="contact" method="POST" data-netlify="true">
-                    <input type="hidden" name="form-name" value="contact" />    
+                <form action="/contact-form" name="contact-form" method="POST" data-netlify="true">
+                    <input type="hidden" name="form-name" value="contact-form" />    
                     <div className="form-group">
                         <input type="text" name="name" placeholder="Name*" required />
                         <input type="email" name="email" placeholder="Email*" required />
