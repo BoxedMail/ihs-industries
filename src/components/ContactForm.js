@@ -23,14 +23,22 @@ function ContactForm() {
             {/* Form Section */}
             <div className="form-box">
                 <h2 className="contact-title">LET US HANDLE YOUR NEXT PROJECT</h2>
-                <form action="/contact-form" name="contact-form" method="POST" data-netlify="true">
-                    <input type="hidden" name="form-name" value="contact-form" />    
+                <form name="contact-form" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+                    {/* Hidden input for form name */}
+                    <input type="hidden" name="form-name" value="contact-form" />
+
+                    {/* Spam honeypot field */}
+                    <div hidden>
+                        <input name="bot-field" />
+                    </div>
+
+                    {/* Form Fields */}
                     <div className="form-group">
                         <input type="text" name="name" placeholder="Name*" required />
                         <input type="email" name="email" placeholder="Email*" required />
                     </div>
                     <div className="form-group">
-                        <input type="text" name="phone" placeholder="Phone"/>
+                        <input type="text" name="phone" placeholder="Phone" />
                     </div>
                     <div className="form-group">
                         <textarea name="message" placeholder="Message*" required></textarea>
