@@ -14,7 +14,7 @@ function Footer() {
         <div className="footer-section">
           <div className="contact-item">
             <FontAwesomeIcon icon={faPhone} className="contact-icon" />
-            <span>+61 451 779 644</span>
+            <span></span>
           </div>
           <div className="contact-item">
             <FontAwesomeIcon icon={faEnvelope} className="contact-icon" />
