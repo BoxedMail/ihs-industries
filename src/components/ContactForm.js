@@ -50,7 +50,7 @@ function ContactForm() {
                 {/* Contact Info */}
                 <div className="contact-info">
                     <h3>Contact Info</h3>
-                    /*<p>Phone: +61 451 779 644</p>*/
+                    {/*<p>Phone: +61 451 779 644</p>*/}
                     <p>Email: <a href="mailto:info@coneng.net.au">info@ihsengineeringco.com.au</a></p>
                 </div>
             </div>
