@@ -1,17 +1,20 @@
 import React from 'react';
 import './Clients.css';
-import bhpLogo from '../images/bhp-logo.png';
+
 import johnHollandLogo from '../images/john-holland-logo.png';
-import developmentVicLogo from '../images/development-vic-logo.png';
-import dpWorldLogo from '../images/dp-world.png';
+import gsecLogo from '../images/gs-e&c-logo.png';
+import weBuild from '../images/webuild-logo.png';
+import sparkLogo from '../images/spark-logo.png';
+import cpbContractors from '../images/cpb-logo.png';
+import downer from '../images/downer-logo.png';
 
 const clients = [
-  { src: bhpLogo, alt: 'BHP' },
-  { src: johnHollandLogo, alt: 'John Holland' },
-  { src: developmentVicLogo, alt: 'Development Victoria' },
-  { src: dpWorldLogo, alt: 'DP World' },
-  { src: bhpLogo, alt: 'BHP' },
-  { src: johnHollandLogo, alt: 'John Holland' },
+  { src: johnHollandLogo, alt: 'John Holland', size: 'medium' },
+  { src: sparkLogo, alt: 'Spark North East Link', size: 'medium' },
+  { src: gsecLogo, alt: 'GS E&C', size: 'large' },
+  { src: weBuild, alt: 'We Build', size: 'large' },
+  { src: cpbContractors, alt: 'CPB Contractors', size: 'medium' },
+  { src: downer, alt: 'Downer', size: 'medium' },
 ];
 
 function Clients() {
@@ -35,11 +38,13 @@ function Clients() {
         <div className="clients-grid">
           {clients.map((client, index) => (
             <div className="client-card" key={index}>
-              <img
-                src={client.src}
-                alt={`${client.alt} Logo`}
-                className="client-logo"
-              />
+              <div className={`logo-wrapper ${client.size}`}>
+                <img
+                  src={client.src}
+                  alt={`${client.alt} Logo`}
+                  className="client-logo"
+                />
+              </div>
             </div>
           ))}
         </div>
