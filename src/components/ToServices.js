@@ -4,17 +4,29 @@ import './ToServices.css';
 
 function ToServices() {
   return (
-    <div className="to-services">
-      <div className="overlay">
-        <h2 className="title">What We Offer</h2>
-        <p className="description">
-          Leading pre-fabrication and pre-cast specialists in Victoria, we excel in delivering innovative solutions to complex technical challenges.
-        </p>
-        <Link to="/services" className="cta-button">
-          Explore Services
-        </Link>
+    <section className="services-highlight">
+      <div className="services-inner">
+
+        <div className="services-content">
+          <span className="services-eyebrow">Capabilities</span>
+
+          <h2 className="services-title">
+            What We Offer
+          </h2>
+
+          <p className="services-description">
+            We are leading pre-fabrication and pre-cast specialists in Victoria,
+            delivering robust, innovative solutions to complex engineering and
+            construction challenges.
+          </p>
+
+          <Link to="/services" className="services-cta">
+            Explore Our Services
+          </Link>
+        </div>
+
       </div>
-    </div>
+    </section>
   );
 }
 
