@@ -28,7 +28,7 @@ function Footer() {
             </span>
           </div>
           <div className="contact-item">
-            <span>ABN: 59 279 008 921</span>
+            <span>ABN: 34 683 245 918</span>
           </div>
         </div>
 
