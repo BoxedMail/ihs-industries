@@ -6,14 +6,16 @@ function HeroSection() {
   return (
     <section className="hero-container">
       <div className="hero-content">
+        
+        <div className="hero-title-wrapper">
+          <div className="hero-accent" />
 
-        <div className="hero-accent" />
-
-        <h1 className="hero-title">
-          <span className="hero-line light">Building</span>
-          <span className="hero-line bold">a better</span>
-          <span className="hero-line light">future</span>
-        </h1>
+          <h1 className="hero-title">
+            <span className="hero-line light">Building</span>
+            <span className="hero-line bold">a better</span>
+            <span className="hero-line light">future</span>
+          </h1>
+        </div>
 
       </div>
     </section>
