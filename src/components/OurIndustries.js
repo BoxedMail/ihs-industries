@@ -9,7 +9,7 @@ const industries = [
   },
   {
     title: 'Tunnelling',
-    icon: 'fa-solid fa-road',
+    icon: 'fa-solid fa-archway',
     description: 'Underground works and complex tunnel systems'
   },
   {

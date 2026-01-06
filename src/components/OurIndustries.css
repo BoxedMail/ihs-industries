@@ -60,7 +60,7 @@
   
     display: flex;
     gap: 22px;
-    align-items: flex-start;
+    align-items: center;
   
     border: 1px solid rgba(0, 0, 0, 0.06);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
@@ -98,6 +98,10 @@
   
   /* ---------- CONTENT ---------- */
   
+  .industry-content {
+    align-self: flex-start;
+  }  
+
   .industry-content h3 {
     font-size: 1.3rem;
     font-weight: 600;
