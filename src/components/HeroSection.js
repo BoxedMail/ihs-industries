@@ -2,22 +2,42 @@ import React from 'react';
 import '../App.css';
 import './HeroSection.css';
 
-function HeroSection() {
+function HeroSection({
+  eyebrow,
+  titleLines = [],
+}) {
   return (
-    <section className="hero-container">
-      <div className="hero-content">
-        
-        <div className="hero-title-wrapper">
-          <div className="hero-accent" />
+    <section className="hero-section">
 
-          <h1 className="hero-title">
-            <span className="hero-line light">Building</span>
-            <span className="hero-line bold">a better</span>
-            <span className="hero-line light">future</span>
-          </h1>
+      {/* HERO IMAGE AREA */}
+      <div className="hero-container">
+        <div className="hero-content">
+          <div className="hero-title-wrapper">
+
+            {eyebrow && (
+              <span className="hero-eyebrow">{eyebrow}</span>
+            )}
+
+            <div className="hero-accent" />
+
+            <h1 className="hero-title">
+              {titleLines.map((line, index) => (
+                <span
+                  key={index}
+                  className={`hero-line ${line.weight || 'bold'}`}
+                >
+                  {line.text}
+                </span>
+              ))}
+            </h1>
+
+          </div>
         </div>
-
       </div>
+
+      {/* HERO BOTTOM DIVIDER */}
+      <div className="hero-divider" />
+
     </section>
   );
 }

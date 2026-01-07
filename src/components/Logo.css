@@ -20,18 +20,6 @@
     z-index: 1; 
 }
 
-.logo-container::after {
-    content: "";
-    position: absolute;
-    top: 0; 
-    left: 0;
-    width: 100%;
-    height: 25px; 
-    z-index: 2; 
-    background: linear-gradient(to bottom, #333333 10px, #135985 10px 25px); 
-    
-}
-
 .background-overlay {
     position: relative;
     z-index: 3; 

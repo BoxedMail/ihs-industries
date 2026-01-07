@@ -20,7 +20,14 @@ function Home () {
                 />
             </Helmet>
             
-            <HeroSection />
+            <HeroSection
+                eyebrow="Home"
+                titleLines={[
+                    { text: 'Building', weight: 'light' },
+                    { text: 'a better', weight: 'bold' },
+                    { text: 'future', weight: 'light' },
+                ]}
+            />
             <Logo/>
             <MiniAbout />
             <ToServices />
