@@ -12,7 +12,14 @@ function Contact () {
                 <title>Contact - IHS Engineering Co</title>
             </Helmet>
 
-            <HeroSection />
+            <HeroSection
+                eyebrow="Contact"
+                titleLines={[
+                    { text: 'Get in', weight: 'light' },
+                    { text: 'Touch', weight: 'bold' },
+                ]}
+            />
+
             <ContactForm />
         </>
     );

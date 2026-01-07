@@ -1,14 +1,67 @@
-.mini-about-container {
-    background-color: #ffffff; /* White background */
-    padding: 20px 40px; /* Add padding for spacing */
-    margin: 20px auto; /* Center the component horizontally */
-    max-width: 1200px; /* Restrict the maximum width */
-    text-align: center; /* Center the text */
+/* ---------- SECTION ---------- */
+
+.mini-about {
+  background-color: #ffffff;
+  padding: 40px 0 110px;
 }
 
-.about-text {
-    font-size: 1.2rem; /* Adjust font size */
-    line-height: 1.8; /* Improve readability */
-    color: #242424;; /* Dark grey for readability */
-    font-family: 'Arial', sans-serif; /* Clean font style */
+/* ---------- INNER ---------- */
+
+.mini-about-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 40px;
+  text-align: center;
+}
+
+/* ---------- EYEBROW ---------- */
+
+.mini-about-eyebrow {
+  display: inline-block;
+  margin-bottom: 16px;
+
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  color: #135985;
+}
+
+/* ---------- TITLE ---------- */
+
+.mini-about-title {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #135985;
+
+  margin-bottom: 30px;
+  line-height: 1.25;
+}
+
+/* ---------- BODY TEXT ---------- */
+
+.mini-about-text {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #444;
+
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 768px) {
+  .mini-about {
+    padding: 80px 0;
+  }
+
+  .mini-about-title {
+    font-size: 2.1rem;
+  }
+
+  .mini-about-text {
+    font-size: 1.05rem;
+  }
 }

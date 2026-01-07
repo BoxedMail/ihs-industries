@@ -12,10 +12,10 @@ function Footer() {
       <div className="footer-container">
         {/* Contact Information */}
         <div className="footer-section">
-          <div className="contact-item">
+          {/* <div className="contact-item">
             <FontAwesomeIcon icon={faPhone} className="contact-icon" />
             <span></span>
-          </div>
+          </div> */}
           <div className="contact-item">
             <FontAwesomeIcon icon={faEnvelope} className="contact-icon" />
             <span>info@ihsengineeringco.com.au</span>
@@ -26,6 +26,9 @@ function Footer() {
                 {/* 1234 Industrial Ave, Suite 100<br /> */}
                 Melbourne, Australia
             </span>
+          </div>
+          <div className="contact-item">
+            <span>ABN: 34 683 245 918</span>
           </div>
         </div>
 

@@ -5,6 +5,7 @@ import OurIndustries from '../OurIndustries';
 import ToServices from '../ToServices';
 import Logo from '../Logo';
 import MiniAbout from '../MiniAbout';
+import Clients from '../Clients';
 import { Helmet } from 'react-helmet';
 
 function Home () {
@@ -19,11 +20,19 @@ function Home () {
                 />
             </Helmet>
             
-            <HeroSection />
+            <HeroSection
+                eyebrow="Home"
+                titleLines={[
+                    { text: 'Building', weight: 'light' },
+                    { text: 'a better', weight: 'bold' },
+                    { text: 'future', weight: 'light' },
+                ]}
+            />
             <Logo/>
             <MiniAbout />
             <ToServices />
             <OurIndustries />
+            <Clients />
         
         </>
     );

@@ -1,31 +1,120 @@
-.hero-container {
-    background: url('../images/image5.JPG') center center/cover no-repeat;
-    height: 50vh;
+/* ---------- HERO WRAPPER ---------- */
+
+.hero-section {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
-    padding-left: 8%;
-    object-fit: contain;
-    margin-top: 0px;
-}
+  }
   
-.hero-container > h1 span {
-    color: #fff;;
-    font-size: 80px;
+  /* ---------- HERO IMAGE AREA ---------- */
+  
+  .hero-container {
+    position: relative;
+    height: 65vh;
+    width: 100%;
+  
+    background: 
+      linear-gradient(
+        to right,
+        rgba(15, 47, 71, 0.85),
+        rgba(15, 47, 71, 0.35)
+      ),
+      url('../images/image5.JPG') center center / cover no-repeat;
+  
+    display: flex;
+    align-items: center;
+  }
+  
+  /* ---------- CONTENT ---------- */
+  
+  .hero-content {
+    padding-left: 8%;
+    max-width: 900px;
+  }
+  
+  /* ---------- EYEBROW ---------- */
+  
+  .hero-eyebrow {
     display: block;
-}
-
-@media screen and (max-width: 960px) {
-    .hero-container > h1 span{
-        font-size: 70px;
+    margin-bottom: 18px;
+  
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+  
+    color: rgba(255, 255, 255, 0.65);
+  }
+  
+  /* ---------- ACCENT + TITLE ---------- */
+  
+  .hero-title-wrapper {
+    display: inline-block;
+  }
+  
+  .hero-accent {
+    width: 100%;
+    height: 4px;
+    background-color: #1978b3;
+    margin-bottom: 28px;
+  }
+  
+  .hero-title {
+    margin: 0;
+  }
+  
+  .hero-line {
+    display: block;
+    color: #ffffff;
+    font-size: 82px;
+    line-height: 1.05;
+    letter-spacing: -1px;
+  }
+  
+  .hero-line.light {
+    font-weight: 400;
+  }
+  
+  .hero-line.bold {
+    font-weight: 700;
+  }
+  
+  /* ---------- HERO DIVIDER ---------- */
+  
+  .hero-divider {
+    width: 100%;
+    height: 25px;
+  
+    background: linear-gradient(
+      to bottom,
+      #333333 10px,
+      #135985 10px 25px
+    );
+  }
+  
+  /* ---------- RESPONSIVE ---------- */
+  
+  @media screen and (max-width: 1100px) {
+    .hero-line {
+      font-size: 70px;
     }
-}
-
-@media screen and (max-width: 560px) {
-    .hero-container > h1 span {
-        font-size: 60px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .hero-container {
+      height: 60vh;
     }
-}
+  
+    .hero-content {
+      padding-left: 6%;
+    }
+  
+    .hero-line {
+      font-size: 58px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .hero-line {
+      font-size: 48px;
+    }
+  }
+  
