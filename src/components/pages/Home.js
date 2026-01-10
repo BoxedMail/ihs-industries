@@ -6,6 +6,7 @@ import ToServices from '../ToServices';
 import Logo from '../Logo';
 import MiniAbout from '../MiniAbout';
 import Clients from '../Clients';
+import ContactCta from '../ContactCta';
 import { Helmet } from 'react-helmet';
 
 function Home () {
@@ -33,6 +34,7 @@ function Home () {
             <ToServices />
             <OurIndustries />
             <Clients />
+            <ContactCta />
         
         </>
     );
