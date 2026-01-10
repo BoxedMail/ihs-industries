@@ -1,125 +1,148 @@
+/* ---------- FOOTER BASE ---------- */
+
 .footer {
     background-color: #135985;
-    color: #fff;
-    min-height: 200px; /* Ensures a minimum height for the footer */
+    color: #ffffff;
+    min-height: 200px;
 }
 
+
+/* ---------- LAYOUT CONTAINER ---------- */
+
 .footer-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 20px; /* Maintained increased padding for more content space */
 }
 
 .footer-section {
     flex: 1;
     min-width: 250px;
-    margin: 20px 0; /* Maintained increased margin for better spacing */
+    margin: 20px 0;
 }
+
+
+/* ---------- CONTACT INFORMATION ---------- */
 
 .contact-item {
     display: flex;
     align-items: center;
-    gap: 15px; /* Increased gap for better spacing */
-    margin-bottom: 39px; /* Adjusted spacing */
-}
-.contact-item:last-child {
-    margin-bottom: 0; /* Removes the unwanted gap below the last item */
+    gap: 15px;
+    margin-bottom: 39px;
 }
 
+.contact-item:last-child {
+    margin-bottom: 0;
+}
 
 .contact-icon {
-    font-size: 1.5rem; /* Increased icon size */
+    font-size: 1.5rem;
     color: #25c4f0;
+}
+
+
+/* ---------- BRANDING ---------- */
+
+.company-link {
+    text-decoration: none;
+    color: inherit;
 }
 
 .company-name {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 50px;
+
     margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 .company-logo {
-    width: 60px; 
+    width: 60px;
     height: auto;
 }
 
 .company-name span {
-    font-size: 2rem; 
+    font-size: 2rem;
     font-weight: bold;
-    color: #fff;
+    color: #ffffff;
 }
 
-.company-link {
-    text-decoration: none; /* Removes the default underline from the link */
-    color: inherit; /* Ensures the text color remains consistent */
-  }
+
+/* ---------- FOOTER NAVIGATION ---------- */
 
 .footer-nav {
     list-style: none;
     padding: 0;
-    display: flex; /* Ensures links are side by side */
-    gap: 30px; /* Increased spacing between links */
-    justify-content: center; /* Centers the links */
+
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
 
 .footer-nav a {
     text-decoration: none;
     color: #ffffff;
-    font-size: 1.2rem; /* Increased link text size */
+    font-size: 1.2rem;
 }
 
 .footer-nav a:hover {
     text-decoration: underline;
 }
 
+
+/* ---------- HOURS & COPYRIGHT ---------- */
+
 .opening-hours {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin-bottom: 100px;
-    font-size: 1.2rem; 
     gap: 15px;
+
+    font-size: 1.2rem;
+    margin-bottom: 100px;
 }
 
 .footer-copyright {
     text-align: right;
-    font-size: 1rem; 
+    font-size: 1rem;
 }
+
+
+/* ---------- RESPONSIVE ---------- */
 
 @media (max-width: 1110px) {
     .company-name span {
-        font-size: 1.75rem; 
+        font-size: 1.75rem;
     }
 }
 
 @media (max-width: 1000px) {
     .footer-container {
         flex-direction: column;
-        align-items: stretch; 
-    }
-
-    .footer-section:first-child {
-        text-align: left; /* Align text to the left for the first section */
-        margin-left: 10px; /* Optional: Add some margin for spacing */
+        align-items: stretch;
     }
 
     .footer-section {
         margin: 10px 0;
     }
 
+    .footer-section:first-child {
+        text-align: left;
+        margin-left: 10px;
+    }
+
     .footer-section:last-child {
-        text-align: right; /* Align text to the right for the last section */
-        margin-right: 10px; /* Optional: Add some margin for spacing */
+        text-align: right;
+        margin-right: 10px;
     }
 
     .footer-nav {
-        justify-content: center; /* Center the navigation links */
         gap: 15px;
         margin-top: 20px;
     }
@@ -141,6 +164,6 @@
 
 @media (max-width: 380px) {
     .company-name span {
-        font-size: 1.5rem; 
+        font-size: 1.5rem;
     }
 }
