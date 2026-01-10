@@ -24,12 +24,12 @@
     display: flex;
     align-items: center;
     gap: 15px; /* Increased gap for better spacing */
-    margin-bottom: 35px; /* Adjusted spacing */
+    margin-bottom: 39px; /* Adjusted spacing */
 }
-
 .contact-item:last-child {
     margin-bottom: 0; /* Removes the unwanted gap below the last item */
 }
+
 
 .contact-icon {
     font-size: 1.5rem; /* Increased icon size */
